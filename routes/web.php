@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/live-soccer', function () {
+return view('fontend.user.liveSoccer');
+});
