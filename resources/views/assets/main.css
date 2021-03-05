@@ -1,0 +1,639 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header{
+    background-color: #0b3c2a;
+    height: 299px;
+    width: 100%;
+}
+.header-with-search{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.header__search-input-wrap:hover .header__search-history{
+    display: block;
+}
+.header__logo{
+    margin: 45px 0 0 89px;
+    cursor: pointer;
+}
+.header__search{
+    height: 40px;
+    width: 600px;
+    background-color: #fff;
+    border-radius: 2px;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    margin-top: 76px;
+    margin-left: 359px;
+    justify-content: space-between;
+}
+.header__search-input-wrap{
+    flex: 1;
+    height: 100%;
+    position: relative;
+}
+.header__search-input{
+    width: 100%;
+    height:100%;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    padding: 0 16px;
+}
+.header__search-btn{
+    background-color:#0b3c2a;
+    border: none;
+    height: 36px;
+    width: 60px;
+    margin-right: 2px;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+.header__search-btn:hover{
+    background-color:#1c8d64;
+}
+.header__search-btn-icon{
+    font-size: 16px;
+    color: #fff;
+}
+.header__search-history{
+    position: absolute;
+    top: calc(100% + 2px );
+    left: 0;
+    width: calc(100% - 16px);
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px #666;
+    z-index: 1;
+    display: none;
+}
+.header__search-history-heading{
+    color: rgb(151, 151, 151);
+    margin: 10px 12px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.header__search-history-list{
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 4px;
+}
+.header__search-history-item{
+    height: 35px;
+    padding: 0 20px;
+    border-radius: 3px;
+}
+.header__search-history-item:hover{
+    background-color:var(--hover-color);
+    
+}
+.header__search-history-item a:hover{
+    color: #fff;
+}
+.header__search-history-item a{
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    line-height: 38px;
+    display: block;
+}
+/* App Container */
+.app__container{
+    background-color: #f5f5f5;
+}
+.header__menu{
+    
+    position: relative;
+    width: 1171px;
+    height: 46px;
+    margin: 0 0 0 90px;
+    background-color:#1f2024;
+}
+.header__menu-ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+.header__menu-li {
+    display: inline-block;
+    text-align: center;
+    padding: 12px 16px;
+  }
+  
+.header__menu-a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .header__menu-li:hover {
+      background-color: #1c8d64;
+  }
+  
+  .active {
+    background-color:var(--primary-color);
+  }
+  .header__break{
+    position: relative;
+    width: 1171px;
+    height: 36px;
+    margin: 0 0 0 90px;
+    background-color:#2c2e32;
+    display: flex;
+  }
+  .header__break-news{
+      height: 36px;
+      width: 101.5px;
+      background-color: #e74c3c;
+      text-align: center;
+      line-height: 200%;
+  }
+  .header__break-text{
+      color: #fff;
+      font-size: 14px;
+  }
+  .header__break-marquee{
+      color: #fff;
+      width: 1071px;
+      line-height: 200%;
+  }
+
+  .footer{
+      background-color: #1f2024;
+      width: 100%;
+      height:354px;
+      display: flex;
+  }
+.footer__left{
+    width: 600px;
+    height: 354px;
+    margin-left: 90px;
+    position: relative;
+}
+.footer__left-img{
+    margin-top: 78px;
+    margin-bottom: 50px;
+    display: flex;
+}
+.footer__left-text{
+    height: 100px;
+    width: 600px;
+    color: #fff;
+}
+
+.footer__left-icon{
+    height: 100px;
+    width: 600px;
+}
+.footer__left-icon-ul{
+    width: 600px;
+    height: 50px;
+    list-style: none;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+}
+.footer__left-icon-li{
+    width: 150px;
+    height: 42px;
+    line-height: 100%;
+    text-align: center;
+}
+.footer__left-icon-li:hover{
+    background-color:#1c8d64;
+}
+.footer__left-icon-a{
+    text-decoration: none;
+    color: #fff;
+    line-height: 250%;
+    
+}
+.footer__right{
+    background-color:  #1f2024;
+    width: 754px;
+    height: 354px;
+}
+.footer__right-text{
+    position: absolute;
+    margin-top: 100px;
+    margin-left:332px;
+    color: #fff;
+}
+  .footer__bottom{
+      width: 100%;
+      height: 73px;
+      background-color:#161619; 
+  }
+  .footer__bottom-text{
+      color: #fff;
+      text-align: center;
+      padding-top: 28px;
+  }
+  .footer__right-text-a{
+      color: #fff;
+      text-decoration: none;
+  }
+  .footer__right-text-a:hover{
+      color: #1c8d64;
+  }
+  .content__break{
+      height: 70px;
+      width: 1170px;
+      margin: 0px 90px 0px 90px;
+      align-items: center;
+  }
+  .content__break-news{
+    border: solid 1px #1c8d64;
+    height: 38px;
+    width: 1170px;
+    margin: 30px 0 30px 0;
+  }
+
+.content__break-news-ul{
+      list-style: none;
+      display: flex;
+      
+  }
+.content__break-news-li{
+    display: inline-block;
+    padding: 8px 16px;
+}
+.content__break-news--a{
+      color: black;
+      text-decoration: none;
+}
+.content__break-news-li:hover{
+    background-color:#1c8d64;
+    
+}
+.content__break-news--a:hover{
+    color: cornsilk;
+}
+
+/* Content trung tam */
+.content__central{
+    width: 1170px;
+    height: 100%;
+    display: flex;
+    margin-left: 90px;
+}
+
+/* Content ben trai */
+.content__central-left{
+}
+.content__left{
+    width: 780px;
+    height: 210px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.content__left-img:hover{
+    opacity: 90%;
+}
+.content__left-text{
+    margin-left: 20px;
+    word-wrap: break-word;
+}
+.content__left-text-a{
+    text-decoration: none;
+    color:black ;
+    font-weight: 500;
+    font-size: 20px;
+}
+.content__left-text-a:hover{
+    color: var(--hover-color);
+}
+.content__left-text-h{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 400;
+}
+.content__left-text-profile{
+    text-decoration: none;
+    margin-top: 10px;
+    color: black;
+}
+.content__left-text-profile:hover{
+    color:#1f7455 ;
+}
+.content__left-text-btn{
+    background-color:#1c8d64 ;
+    color: #fff;
+    width: 98px;
+    height: 34px;
+    border-radius: 10px;
+    margin-left: 150px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.content__left-text-btn:hover{
+    background-color: #1f7455;
+}
+
+/* Content ben phai */
+.content__central-right{
+    width: 375px;
+    height: 375px;
+    margin-left: 20px;
+}
+.content__central-right-img:hover{
+    opacity: 90%;
+}
+.content__right{
+    margin-bottom: 20px;
+    display: flex;
+}
+.content__central-right-text{
+    margin-left: 10px;
+}
+
+.content__central-right-text-h{
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 400;
+}
+
+.content__central-right-text-a{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+.content__central-right-text-a:hover{
+    color: var(--hover-color);
+}
+
+/* content tin hot */
+.content__hotnews{
+    width: 1170px;
+    margin-left: 90px;
+    margin-bottom: 60px;
+    height: 100%;
+}
+
+.content__hotnews-h::before{
+    content: 'Tin Hot';
+    background-color: var(--primary-color);
+    font-size: 20px;
+    border: 6px solid var(--primary-color);
+    border-radius: 50px;
+    color: #fff;
+}
+.content__hotnews-central{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content__hotnews-img:hover{
+    opacity: 90%;
+}
+
+.content__hotnews-text{
+    margin-left: 50px;
+    
+}
+.content__hotnews-text-icon{
+    display: flex;
+    align-items: center;
+}
+
+.content__hotnews-text-icon-a{
+    text-decoration: none;
+    color: black;
+}
+.content__hotnews-text-icon-a:hover{
+    color: var(--hover-color);
+}
+.content__hotnews-text-h{
+    margin-left: 20px;
+    color: black;
+    font-weight: 400;
+}
+.content__hotnews-text-fir{
+    margin-top: 20px;
+}
+
+.content__hotnews-text-a{
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 20px;
+}
+.content__hotnews-text-a:hover{
+    color: var(--hover-color);
+}
+.content__hotnews-text-h5{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 400;
+}
+.content__hotnews-text-btn{
+    background-color:#1c8d64 ;
+    color: #fff;
+    width: 98px;
+    height: 34px;
+    border-radius: 10px;
+    margin-left: 200px;
+    border: none;
+    cursor: pointer;
+    margin-top: 120px;
+}
+.content__hotnews-text-btn:hover{
+    background-color: #1f7455;
+}
+/* tin tuc tay ban nha */
+
+.content__spain{
+    width: 1170px;
+    height: 100%;
+    margin-left: 90px;
+}
+.content__title{
+    margin: 50px 0 50px 0;
+}
+.content__title::before{
+    content: 'Tây Ban Nha';
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 20px;
+    border: 6px solid var(--primary-color);
+    border-radius: 50px;
+    
+}
+.content__banner{
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+.content__banner::before{
+    content: 'Bóng Đá Tây Ban Nha';
+    position: absolute;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-left: 10px  solid var(--primary-color);
+    border-right: 10px  solid var(--primary-color);
+    border-radius: 5px;
+    top: 250px;
+    left: 250px;
+    font-size: 14px;
+}
+.content__banner-text{
+    position: absolute;
+    text-decoration: none;
+    font-size: 34px;
+    color:#fff;
+    font-weight: 500;
+    top: 280px;
+    left: 230px;
+    word-wrap: break-word;
+    width: 600px;
+}
+.content__banner:hover{
+    opacity: 90%;
+}
+.content__banner-text-icon{
+    position: absolute;
+    display: flex;
+    top: 400px;
+    left:250px;
+    align-items: center;
+}
+.content__banner-text-icon-a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.content__banner-text-h{
+    margin-left: 20px;
+    color: #fff;
+}
+
+.content__spain-news1{
+    display: flex;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+.content__spain-news1-img:hover{
+    opacity: 90%;
+}
+.content__spain-news1-icon{
+    color: #979797;
+    font-size: 14px;
+}
+
+.content__spain-news1-text{
+    width: 240px;
+}
+.content__spain-news1-text-a:hover{
+    color: var(--hover-color);
+}
+
+.content__spain-news1-text-a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+.content__spain-news1-col{
+    margin: 0 34px 34px 34px;
+}
+
+/* Tin Blog */
+
+.content__blog{
+    width: 1170px;
+    height: 100%;
+    margin-left: 90px;
+}
+.content__blog-title{
+    margin: 50px 0 50px 0;
+}
+.content__blog-title::before{
+    content: 'Blog';
+    background-color: var(--primary-color);
+    font-size: 20px;
+    border: 6px solid var(--primary-color);
+    border-radius: 50px;
+    color: #fff;
+}
+.content__blog-row{
+    display: flex;
+    margin-bottom: 30px;
+}
+.content__blog-column{
+    margin-right: 34px;
+}
+.content__blog-text-icon{
+    display: flex;
+    align-items: center; 
+    margin-top: 10px;
+}
+
+.content__blog-text-icon-a{
+    text-decoration: none;
+    color: black;
+}
+.content__blog-text-icon-a:hover{
+    color: var(--hover-color);
+}
+.content__blog-text-h{
+    margin-left: 20px;
+    color: black;
+    font-weight: 400;
+}
+.content__blog-text{
+    width: 370px;
+    margin-top: 10px;
+}
+.content__blog-text-a{
+    text-decoration: none;
+    color: black ;
+    font-size: 20px;
+    font-weight: 500;
+}
+.content__blog-text-a:hover{
+    color: var(--hover-color);
+}
+.content__blog-text-h5{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 400;
+}
+.content__blog-text-btn{
+    background-color:#1c8d64 ;
+    color: #fff;
+    width: 98px;
+    height: 34px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.content__blog-text-btn:hover{
+    opacity: 90%;
+}
+.content__blog-column-img:hover{
+    opacity: 90%;
+}
