@@ -1,0 +1,23 @@
+:root{
+    --primary-color : #0b3c2a;
+    --hover-color: #1f7455;
+}
+body{
+    line-height: 1.4;
+}
+.content__more{
+    text-align: center;
+    
+}
+.content__more--btn{
+    color: black;
+    border: 1px solid #979797;
+    width: 352px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+}
+.content__more--btn:hover{
+    color: var(--hover-color);
+}
